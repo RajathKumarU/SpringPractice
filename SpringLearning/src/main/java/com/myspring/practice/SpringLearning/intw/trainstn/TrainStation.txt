@@ -1,0 +1,78 @@
+Implement a class TrainSystem that has three methods
+1. checkIn(int id, string stationName, int t)
+A customer with an id card equal to id, gets in the station stationName at time t.
+A customer can only be checked into one place at a time.
+2. checkOut(int id, string stationName, int t)
+A customer with an id card equal to id, gets out from the station stationName at time t.
+Checked-in customer can be checked out only.
+3. getAverageTime(string startStation, string endStation)
+Returns the average time to travel between the startStation and the endStation.
+The average time is computed from all the previous traveling from startStation to endStation that happened directly.
+Example
+$train = new TrainSystem();
+
+$train->checkIn(45, "San Francisco", 3);
+$train->checkIn(32, "San Mateo", 8);
+$train->checkIn(27, "San Francisco", 10);
+
+$train->checkOut(45, "Palo Alto", 15);
+$train->checkOut(27, "Palo Alto", 20);
+$train->checkOut(32, "Mountain View", 22);
+
+$train->getAverageTime("San Mateo", "Mountain View");
+// Return 14. There is only one travel from "San Mateo" (at time 8) to "Mountain View" (at time 22).
+
+$train->getAverageTime("San Francisco", "Palo Alto");
+// Return 11. There are two travels from "San Francisco" to "Palo Alto",
+// a customer with id=45 from time=3 to time=15 and a customer with id=27 from time=10 to time=20.
+// So the average time is ((15-3) + (20-10)) / 2 = 11
+
+$train->checkIn(10, "San Francisco", 24);
+$train->getAverageTime("San Francisco", "Palo Alto");
+// Return 11
+
+$train->checkOut(10, "Palo Alto", 38);
+$train->getAverageTime("San Francisco", "Palo Alto");
+// Return 12
+
+
+
+Stub:
+
+class TrainSystem: pass
+
+train = TrainSystem()
+
+train.checkIn(45, "San Francisco", 3)
+train.checkIn(32, "San Mateo", 8)
+train.checkIn(27, "San Francisco", 10)
+
+train.checkOut(45, "Palo Alto", 15)
+train.checkOut(27, "Palo Alto", 20)
+train.checkOut(32, "Mountain View", 22)
+
+print(train.getAverageTime("San Mateo", "Mountain View")) # 14
+print(train.getAverageTime("San Francisco", "Palo Alto")) # 11
+
+//Add and remove during checkin/checkout
+Map -> id -> Customer info (stationName, time)
+
+// Add to this map during checkout
+Map -> src-dest -> List of time diff
+
+
+POST /train/check?id=<>?src=<>?t=<>
+{
+status: CHECK_IN/CHECKOUT
+}
+
+PUT /train/checkout?id=<>?src=<>?t=<>
+{
+    SUCCESS/FAILURE
+}
+
+GET /train/avg?src=<>?dest=<>
+{
+    avgTime: "";
+}
+
