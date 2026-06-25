@@ -7,9 +7,9 @@ import com.myspring.practice.SpringLearning.exp.cart.rule.RestrictionRule;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class TescoCheckoutSystem {
+public class CheckoutSystem {
 
-    public static final Logger LOGGER = Logger.getLogger(TescoCheckoutSystem.class.getName());
+    public static final Logger LOGGER = Logger.getLogger(CheckoutSystem.class.getName());
 
     static void main() {
         // Initialize Cart

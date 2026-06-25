@@ -1,6 +1,6 @@
 package com.myspring.practice.SpringLearning.exp.cart;
 
-public record Item (String productId, String category, int qty) {
+public record Item(String productId, String category, int qty) {
     public Item {
         if (qty < 0) {
             throw new IllegalArgumentException("Quantity cannot be negative");
