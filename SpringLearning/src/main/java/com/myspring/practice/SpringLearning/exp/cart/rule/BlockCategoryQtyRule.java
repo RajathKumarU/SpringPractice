@@ -1,6 +1,6 @@
-package com.myspring.practice.SpringLearning.exp.tesco.cart.rule;
+package com.myspring.practice.SpringLearning.exp.cart.rule;
 
-import com.myspring.practice.SpringLearning.exp.tesco.cart.Item;
+import com.myspring.practice.SpringLearning.exp.cart.Item;
 import lombok.AllArgsConstructor;
 
 import java.util.List;

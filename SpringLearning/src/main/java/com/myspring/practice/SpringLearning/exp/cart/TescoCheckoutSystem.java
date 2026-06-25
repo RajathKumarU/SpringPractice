@@ -1,8 +1,8 @@
-package com.myspring.practice.SpringLearning.exp.tesco.cart;
+package com.myspring.practice.SpringLearning.exp.cart;
 
-import com.myspring.practice.SpringLearning.exp.tesco.cart.rule.BlockCategoryQtyRule;
-import com.myspring.practice.SpringLearning.exp.tesco.cart.rule.BlockTotalQtyRule;
-import com.myspring.practice.SpringLearning.exp.tesco.cart.rule.RestrictionRule;
+import com.myspring.practice.SpringLearning.exp.cart.rule.BlockCategoryQtyRule;
+import com.myspring.practice.SpringLearning.exp.cart.rule.BlockTotalQtyRule;
+import com.myspring.practice.SpringLearning.exp.cart.rule.RestrictionRule;
 
 import java.util.List;
 import java.util.logging.Logger;

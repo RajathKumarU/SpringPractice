@@ -1,4 +1,4 @@
-package com.myspring.practice.SpringLearning.exp.tesco.cart;
+package com.myspring.practice.SpringLearning.exp.cart;
 
 public record Item (String productId, String category, int qty) {
     public Item {

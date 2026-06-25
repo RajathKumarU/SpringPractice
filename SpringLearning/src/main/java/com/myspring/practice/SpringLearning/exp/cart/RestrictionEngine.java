@@ -1,6 +1,6 @@
-package com.myspring.practice.SpringLearning.exp.tesco.cart;
+package com.myspring.practice.SpringLearning.exp.cart;
 
-import com.myspring.practice.SpringLearning.exp.tesco.cart.rule.RestrictionRule;
+import com.myspring.practice.SpringLearning.exp.cart.rule.RestrictionRule;
 import lombok.AllArgsConstructor;
 
 import java.util.List;
