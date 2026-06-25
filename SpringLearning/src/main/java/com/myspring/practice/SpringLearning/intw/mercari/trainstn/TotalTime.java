@@ -1,4 +1,4 @@
-package com.myspring.practice.SpringLearning.intw.trainstn;
+package com.myspring.practice.SpringLearning.intw.mercari.trainstn;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

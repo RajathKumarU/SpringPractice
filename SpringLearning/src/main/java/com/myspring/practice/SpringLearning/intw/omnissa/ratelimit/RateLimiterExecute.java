@@ -1,4 +1,4 @@
-package com.myspring.practice.SpringLearning.intw.ratelimit;
+package com.myspring.practice.SpringLearning.intw.omnissa.ratelimit;
 
 public class RateLimiterExecute {
 

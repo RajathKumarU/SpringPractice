@@ -1,4 +1,4 @@
-package com.myspring.practice.SpringLearning.intw.vm;
+package com.myspring.practice.SpringLearning.intw.omnissa.vm;
 
 import java.util.HashMap;
 import java.util.Map;
